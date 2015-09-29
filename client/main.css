@@ -1,0 +1,33 @@
+.root-argument .control {
+    display: none;
+}
+
+.post-button-box {
+  position: fixed;
+  right: 25px;
+  top: 80px;
+}
+
+.page-content {
+  padding: 20px;
+}
+
+.at-error {
+  height: auto !important;
+  width: 100%;
+  padding:5px;
+  margin: 10px;
+}
+
+.create-post, .at-form {
+  width: 33%;
+  margin: 0 auto 0 auto;
+}
+
+/*.fit-graph, #arguments-graph {
+    position: absolute;
+    top:0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}*/

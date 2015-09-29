@@ -1,0 +1,39 @@
+<template name="layout">
+  <div>
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Agora Project</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          {{#if currentUser }}
+          <a class="mdl-navigation__link" href="/forum">Forum</a>
+          {{/if}}
+          <a class="mdl-navigation__link" href="/sign-in">{{> atNavButton }}</a>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Agora Project</span>
+      <nav class="mdl-navigation">
+        {{#if isInRole 'moderator'}}
+          <a class="mdl-navigation__link" href="/forum/users">Users</a>
+        {{/if }}
+        {{#if currentUser }}
+          <a class="mdl-navigation__link" href="/change-password">Change password</a>
+        {{/if }}
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <!-- Your content goes here -->
+        {{> yield}}
+      </div>
+    </main>
+  </div>
+  </div>
+</template>
