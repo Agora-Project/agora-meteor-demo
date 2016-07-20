@@ -8,6 +8,9 @@ Router.onBeforeAction ->
 Router.configure
   layoutTemplate: 'layout'
 
+Router.route '/', ->
+  this.render('home')
+
 Router.route '/account', ->
   this.render('account')
 
