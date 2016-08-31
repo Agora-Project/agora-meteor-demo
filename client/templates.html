@@ -5,6 +5,12 @@
     and as such has basically no security whatsoever. Do not use a password you are using anywhere else, as it may very
     well be stolen, and do not post anything you are not prepared to see deleted, as database clears will likely be
     common for the foreseeable future. If you wish to report an issue, please do so <a href="https://github.com/Agora-Project/agora-meteor/issues">here</a>.
+
+    <p></p>The forum displays posts in a force directed graph. Each post has three buttons, red, blue, and green. The red
+    button closes a post, removing it from the graph but leaving it in the database. The blue button loads all posts
+    connected to it's post, adding them to the graph, and the green button is a toggle to select a post. You can
+    select multiple posts this way, then use the + button in the upper right to add a new post connecting to all
+    selected posts.
   </body>
 </template>
 
