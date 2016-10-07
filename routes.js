@@ -1,24 +1,24 @@
 Router.onBeforeAction(function() {
-  $('.mdl-layout__drawer').removeClass('is-visible');
-  return this.next();
+    $('.mdl-layout__drawer').removeClass('is-visible');
+    return this.next();
 });
 
 Router.configure({
-  layoutTemplate: 'layout'
+    layoutTemplate: 'layout'
 });
 
 Router.route('/', function() {
-  return this.render('home');
+    return this.render('home');
 });
 
 Router.route('/account', function() {
-  return this.render('account');
+    return this.render('account');
 });
 
 Router.route('/settings', function() {
-  return this.render('settings');
+    return this.render('settings');
 });
 
 Router.route('/login', function() {
-  return this.render('login');
+    return this.render('login');
 });
