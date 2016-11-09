@@ -9,6 +9,7 @@ iron:router
 accounts-password@1.3.0
 useraccounts:core
 zodiase:mdl
+fortawesome:fontawesome
 momentjs:moment
 agoraforum:core
 meteor-base@1.0.4
