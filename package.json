@@ -1,0 +1,30 @@
+{
+  "name": "agora-meteor-demo",
+  "version": "1.0.0",
+  "description": "Agora is a non-linear forum intended to facilitate mass communication.",
+  "main": "routes.js",
+  "dependencies": {
+    "babel-runtime": "^6.18.0",
+    "bcrypt": "^0.8.7",
+    "meteor-deque": "^2.1.0",
+    "slackbots": "^0.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agora-Project/agora-meteor-demo.git"
+  },
+  "keywords": [
+    "agora",
+    "forum"
+  ],
+  "author": "Angle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Agora-Project/agora-meteor-demo/issues"
+  },
+  "homepage": "https://github.com/Agora-Project/agora-meteor-demo#readme"
+}

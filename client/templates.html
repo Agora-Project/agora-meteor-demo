@@ -2,7 +2,7 @@
   <h1>Agora forum example app</h1>
   <body>
     This page is for testing the Agora forum application. Please keep in mind that this application is in it's infancy,
-    and as such has basically no security whatsoever. Do not use a password you are using anywhere else, as it may very
+    and as such has very little security. Do not use a password you are using anywhere else, as it may very
     well be stolen, and do not post anything you are not prepared to see deleted, as database clears will likely be
     common for the foreseeable future. If you wish to report an issue, please do so <a href="https://github.com/Agora-Project/agora-meteor/issues">here</a>.
 
@@ -16,11 +16,10 @@
 
     <h3>Instructions for Use</h3>
 
-    <p></p>The forum displays posts in a force directed graph. Each post has three buttons, red, blue, and green. The red
-    button closes a post, removing it from the graph but leaving it in the database. The blue button loads all posts
-    connected to it's post, adding them to the graph, and the green button is a toggle to select a post. You can
-    select multiple posts this way, then use the + button in the upper right to add a new post connecting to all
-    selected posts.
+    <p></p>The forum displays posts in a force directed graph. The red X button closes a post, removing it from view but not
+    deleting it. The "Show Connecting Posts" button shows posts that connect to the given post and haven't been displayed yet.
+    The reply button adds a new reply to the graph that you can edit and then submit. If you click reply to multiple different
+    posts, your post will be connected to all of them. You can also click reply again to make it not be in response to those posts.
   </body>
 </template>
 
