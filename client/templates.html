@@ -1,73 +1,88 @@
 <template name="home">
-  <h1>Agora forum example app</h1>
-  <body>
-    This page is for testing the Agora forum application. Please keep in mind that this application is in it's infancy,
-    and as such has very little security. Do not use a password you are using anywhere else, as it may very
-    well be stolen, and do not post anything you are not prepared to see deleted, as database clears will likely be
-    common for the foreseeable future. If you wish to report an issue or see what future developements are planned, please do so <a href="https://github.com/Agora-Project/agora-meteor/issues">here</a>.
+    <h1 align="center">Agora forum example app</h1>
+    <div class="front-page-center">
 
-    <h2>What is Agora?</h2>
+        This page is for testing the Agora forum application. Please keep in mind
+        that this application is in it's infancy,and as such has very little
+        security. Do not use a password you are using anywhere else, as it may very
+        well be stolen, and do not post anything you are not prepared to see
+        deleted, as database clears will likely be common for the foreseeable
+        future. If you wish to report an issue or see what future developements
+        are planned, please do so
+        <a href="https://github.com/Agora-Project/agora-meteor/issues">here</a>.
 
-    Agora is a new kind of internet forum designed to allow large numbers of people to discuss complicated topics and
-    come to meaningful conclusions. It does this by changing the structure of the conversation - instead of a linear
-    thread of replies, any post can be in response to any number of other posts, and can have any number of other posts
-    in response to it. Thus, discussions can diverge into different threads for all the various details, and converge for
-    their conclusions. In a linear thread, this all has to happen in the same place.
+        <h2 align="center">What is Agora?</h2>
 
-    <h3>Instructions for Use</h3>
+        Agora is a new kind of internet forum designed to allow large numbers of
+        people to discuss complicated topics and come to meaningful conclusions. It
+        does this by changing the structure of the conversation - instead of a
+        linear thread of replies, any post can be in response to any number of other
+        posts, and can have any number of other posts in response to it. Thus,
+        discussions can diverge into different threads for all the various details,
+        and converge for their conclusions. In a linear thread, this all has to
+        happen in the same place.
 
-    <p></p>The forum displays posts in a force directed graph. The red X button closes a post, removing it from view but not
-    deleting it. The "Show Connecting Posts" button shows posts that connect to the given post and haven't been displayed yet.
-    The reply button adds a new reply to the graph that you can edit and then submit. If you click reply to multiple different
-    posts, your post will be connected to all of them. You can also click reply again to make it not be in response to those posts.
-    If you want to move posts about, you can click the background to drag the entire graph, or click the titlebar (but not the title!)
-    of a post to drag just that post.
+        <h3 align="center">Instructions for Use</h3>
 
-    <h4>Learn more and contribute</h4>
+        <p></p>The forum displays posts in a force directed graph. The red X button
+        closes a post, removing it from view but not deleting it. The "Show
+        Connecting Posts" button shows a list of posts that connect to the given
+        post and haven't been displayed yet. The reply button adds a new reply to
+        the graph that you can edit and then submit. If you click reply to multiple
+        different posts, your post will be connected to all of them. You can also
+        click reply again to make it not be in response to those posts. If you want
+        to move posts about, you can click the background to drag the entire graph,
+        or click the titlebar (but not the title!) of a post to drag just that post.
 
-    <p></p>You can see the github projects for the forum and the test site containing it <a href="https://github.com/Agora-Project/agora-meteor">here</a> (Forum)
-    and <a href="https://github.com/Agora-Project/agora-meteor-demo">here</a> (Test site using said forum).
+        <h4 align="center">Learn more and contribute</h4>
 
-    If you wish to contact or discuss the froum, please create an account and comment under the "Meta Agora" forum.
+        <p></p>You can see the github projects for the forum and the test site
+        containing it <a href="https://github.com/Agora-Project/agora-meteor">here
+        </a> (Forum) and
+        <a href="https://github.com/Agora-Project/agora-meteor-demo">here</a> (Test
+        site using said forum).
 
-  </body>
+        If you wish to contact or discuss the froum, please create an account and
+        comment under the "Meta Agora" forum.
+
+    </div>
 </template>
 
 <template name="layout">
-  <div>
-  <!-- Always shows a header, even in smaller screens. -->
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <a class="mdl-navigation__link" href="/" >Agora Project</a>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation. We hide it in small screens. -->
-        <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <a class="mdl-navigation__link" href="/forum">Forum</a>
-            <a class="mdl-navigation__link" href="/forum/overview">Overview</a>
-            <a class="mdl-navigation__link" href="/sign-in">{{> atNavButton }}</a>
-        </nav>
-      </div>
-    </header>
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">Agora Project</span>
-      <nav class="mdl-navigation">
-        {{#if isInRole 'moderator'}}
-          <a class="mdl-navigation__link" href="/forum/users">Users</a>
-        {{/if }}
-        {{#if currentUser }}
-          <a class="mdl-navigation__link" href="/change-password">Change password</a>
-        {{/if }}
-      </nav>
+    <div>
+        <!-- Always shows a header, even in smaller screens. -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <a class="mdl-navigation__link" href="/" >Agora Project</a>
+                    <!-- Add spacer, to align navigation to the right -->
+                    <div class="mdl-layout-spacer"></div>
+                    <!-- Navigation. We hide it in small screens. -->
+                    <nav class="mdl-navigation mdl-layout--large-screen-only">
+                        <a class="mdl-navigation__link" href="/forum">Forum</a>
+                        <a class="mdl-navigation__link" href="/forum/overview">Overview</a>
+                        <a class="mdl-navigation__link" href="/sign-in">{{> atNavButton }}</a>
+                    </nav>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Agora Project</span>
+                <nav class="mdl-navigation">
+                    {{#if isInRole 'moderator'}}
+                        <a class="mdl-navigation__link" href="/forum/users">Users</a>
+                    {{/if }}
+                    {{#if currentUser }}
+                        <a class="mdl-navigation__link" href="/change-password">Change password</a>
+                    {{/if }}
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+            <div class="page-content">
+                <!-- Your content goes here -->
+                {{> yield}}
+            </div>
+            </main>
+        </div>
     </div>
-    <main class="mdl-layout__content">
-      <div class="page-content">
-        <!-- Your content goes here -->
-        {{> yield}}
-      </div>
-    </main>
-  </div>
-  </div>
 </template>
