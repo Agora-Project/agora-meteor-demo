@@ -9,3 +9,9 @@ Template.layout.events({
         return Router.go('/sign-in');
     }
 });
+
+Template.layout.helpers({
+    checkIfModerator: function() {
+        return Roles.userIsInRole(Meteor.userId(), ['moderator']);
+    }
+});

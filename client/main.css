@@ -2,18 +2,6 @@
     display: none;
 }
 
-.post-button-box {
-  position: fixed;
-  right: 25px;
-  top: 80px;
-}
-
-.delete-button-box {
-  position: fixed;
-  right: 25px;
-  top: 160px;
-}
-
 .page-content {
   padding: 0px;
 }
