@@ -64,7 +64,7 @@
                     <nav class="mdl-navigation mdl-layout--large-screen-only">
                         <a class="mdl-navigation__link" href="/forum">Forum</a>
                         <a class="mdl-navigation__link" href="/forum/overview">Overview</a>
-                        {{#if checkIfModerator}}
+                        {{#if isInRole 'moderator'}}
                         <a class="mdl-navigation__link" href="/forum/adminScreen">Admin</a>
                         {{/if}}
                         <a class="mdl-navigation__link" href="/sign-in">{{> atNavButton }}</a>
