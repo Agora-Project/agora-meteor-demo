@@ -7,8 +7,12 @@ Router.configure({
     layoutTemplate: 'layout'
 });
 
-Router.route('/', function() {
+Router.route('/about', function() {
     return this.render('home');
+});
+
+Router.route('/', function() {
+    return this.render('doubleView');
 });
 
 Router.route('/account', function() {
