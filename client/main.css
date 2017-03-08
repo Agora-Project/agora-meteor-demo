@@ -2,18 +2,6 @@
     display: none;
 }
 
-.post-button-box {
-  position: fixed;
-  right: 25px;
-  top: 80px;
-}
-
-.delete-button-box {
-  position: fixed;
-  right: 25px;
-  top: 160px;
-}
-
 .page-content {
   padding: 0px;
 }
@@ -30,10 +18,9 @@
   margin: 0 auto 0 auto;
 }
 
-/*.fit-graph, #posts-graph {
+.front-page-center {
+    text-align: center;
     position: absolute;
-    top:0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-}*/
+    left: 20vw;
+    width: 60vw;
+}
