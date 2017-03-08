@@ -73,7 +73,7 @@
                     <nav class="mdl-navigation mdl-layout--large-screen-only">
                         <a class="mdl-navigation__link" href="/">Forum</a>
                         {{#if isInRole 'moderator'}}
-                        <a class="mdl-navigation__link" href="/forum/adminScreen">Admin</a>
+                        <a class="mdl-navigation__link" href="/admin">Admin</a>
                         {{/if}}
                         <a class="mdl-navigation__link" href="/about" >About</a>
                         <a class="mdl-navigation__link" href="/sign-in">{{> atNavButton }}</a>
@@ -84,7 +84,7 @@
                 <span class="mdl-layout-title">Agora Project</span>
                 <nav class="mdl-navigation">
                     {{#if isInRole 'moderator'}}
-                        <a class="mdl-navigation__link" href="/forum/users">Users</a>
+                        <a class="mdl-navigation__link" href="/users">Users</a>
                     {{/if }}
                     {{#if currentUser }}
                         <a class="mdl-navigation__link" href="/change-password">Change password</a>
