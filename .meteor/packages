@@ -37,3 +37,5 @@ service-configuration@1.0.11
 utilities:avatar
 alanning:roles
 google-config-ui
+maxkfranz:cytoscape
+maxkfranz:cytoscape-dagre
