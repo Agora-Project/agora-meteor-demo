@@ -12,7 +12,7 @@ Router.route('/about', function() {
 });
 
 Router.route('/', function() {
-    return this.render('webglView');
+    return this.render('mainView');
 });
 
 Router.route('/account', function() {
