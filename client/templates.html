@@ -1,4 +1,4 @@
-<template name="home">
+<template name="about">
     <h1 align="center">Agora forum example app</h1>
     <div class="front-page-center">
 
@@ -66,15 +66,14 @@
             <header class="mdl-layout__header">
                 <div class="mdl-layout__header-row">
                     <!-- Title -->
-                    <a class="mdl-navigation__link" href="/" >Agora Project</a>
+                    <a class="mdl-navigation__link" href="/">Agora Project</a>
                     <!-- Add spacer, to align navigation to the right -->
                     <div class="mdl-layout-spacer"></div>
                     <!-- Navigation. We hide it in small screens. -->
                     <nav class="mdl-navigation mdl-layout--large-screen-only">
-                        <a class="mdl-navigation__link" href="/forum">Forum</a>
-                        <a class="mdl-navigation__link" href="/forum/overview">Overview</a>
+                        <a class="mdl-navigation__link" href="/">Forum</a>
                         {{#if isInRole 'moderator'}}
-                        <a class="mdl-navigation__link" href="/forum/adminScreen">Admin</a>
+                        <a class="mdl-navigation__link" href="/admin">Admin</a>
                         {{/if}}
                         <a class="mdl-navigation__link" href="/about" >About</a>
                         <a class="mdl-navigation__link" href="/sign-in">{{> atNavButton }}</a>
@@ -85,7 +84,7 @@
                 <span class="mdl-layout-title">Agora Project</span>
                 <nav class="mdl-navigation">
                     {{#if isInRole 'moderator'}}
-                        <a class="mdl-navigation__link" href="/forum/users">Users</a>
+                        <a class="mdl-navigation__link" href="/users">Users</a>
                     {{/if }}
                     {{#if currentUser }}
                         <a class="mdl-navigation__link" href="/change-password">Change password</a>

@@ -8,21 +8,9 @@ Router.configure({
 });
 
 Router.route('/about', function() {
-    return this.render('home');
+    return this.render('about');
 });
 
 Router.route('/', function() {
-    return this.render('doubleView');
-});
-
-Router.route('/account', function() {
-    return this.render('account');
-});
-
-Router.route('/settings', function() {
-    return this.render('settings');
-});
-
-Router.route('/login', function() {
-    return this.render('login');
+    return this.render('mainView');
 });
