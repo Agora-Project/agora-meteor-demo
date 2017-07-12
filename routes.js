@@ -12,5 +12,5 @@ Router.route('/about', function() {
 });
 
 Router.route('/', function() {
-    return this.render('mainView');
+    return this.redirect("/forum");
 });
