@@ -66,6 +66,9 @@
                     <a class="mdl-navigation__link" href="/admin">Admin</a>
                     {{/if}}
                     <a class="mdl-navigation__link" href="/about" >About</a>
+                    {{#if currentUser }}
+                        <a class="mdl-navigation__link" href="/user" >Profile</a>
+                    {{/if }}
                     <a class="mdl-navigation__link" href="/sign-in">{{> atNavButton }}</a>
                 </div>
             </header>
