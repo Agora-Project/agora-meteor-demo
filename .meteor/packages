@@ -11,7 +11,6 @@ useraccounts:core
 zodiase:mdl
 fortawesome:fontawesome
 momentjs:moment
-agoraforum:core@0.0.7
 meteor-base@1.1.0
 mobile-experience@1.0.4
 mongo@1.2.0
@@ -40,3 +39,4 @@ google-config-ui@1.0.0
 dynamic-import@0.1.1
 aldeed:simple-schema
 aldeed:collection2
+agoraforum:core
