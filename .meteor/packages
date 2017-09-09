@@ -11,7 +11,7 @@ useraccounts:core
 zodiase:mdl
 fortawesome:fontawesome
 momentjs:moment
-agoraforum:core@0.0.7
+agoraforum:core
 meteor-base@1.1.0
 mobile-experience@1.0.4
 mongo@1.1.19
