@@ -1,3 +1,0 @@
-[submodule "agoraforum:core"]
-	path = packages/agoraforum:core
-	url = https://github.com/Agora-Project/agora-meteor
