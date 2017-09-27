@@ -26,6 +26,15 @@ meteor
 
 The Agora server will start on `http://localhost:3000`
 
+In addition to the routes provided by agora-meteor, agora-meteor-demo adds routing and templating for user accounts using [useraccounts:iron-routing](https://github.com/meteor-useraccounts/iron-routing). You can see how it is configured at [lib/config/useraccounts.js](./lib/config/useraccounts.js). In particular, it adds these routes:
+
+* `/signIn`: A sign-in page.
+* `/signUp`: A sign-up page. Upon user creation, a verification email will be sent to the given email address.
+* `/changePwd`: A page where users can change their password.
+* `/forgotPwd`: A page to request a password reset.
+* `/resetPwd`: A page where a user can reset their password after requesting a password reset.
+* `/verifyEmail`: Upon user creation, a verification email will be sent to the given email address with a link to this page, associated with a unique token.
+
 ## Testing
 
 Currently, there is no test suite. However, it is coming!
