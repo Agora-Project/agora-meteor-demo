@@ -4,8 +4,6 @@
   "description": "Agora is a non-linear forum intended to facilitate mass communication.",
   "main": "routes.js",
   "dependencies": {
-    "aldeed:collection2": "^2.0.0",
-    "aldeed:simple-schema": "^1.5.0",
     "babel-runtime": "^6.26.0",
     "bcrypt": "^0.8.7",
     "meteor-deque": "^2.1.0",
