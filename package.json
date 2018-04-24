@@ -5,9 +5,7 @@
   "main": "routes.js",
   "dependencies": {
     "babel-runtime": "^6.26.0",
-    "bcrypt": "^0.8.7",
-    "meteor-deque": "^2.1.0",
-    "slackbots": "^0.5.3"
+    "bcrypt": "^0.8.7"
   },
   "devDependencies": {},
   "scripts": {
