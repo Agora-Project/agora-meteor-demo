@@ -9,7 +9,7 @@ To build the Agora forum software, you will need [git](https://git-scm.com/) and
 Once you have your dependencies installed, run this:
 
 ```bash
-git clone https://github.com/garbados/agora-meteor-demo
+git clone https://github.com/Agora-Project/agora-meteor-demo
 cd agora-meteor-demo
 git submodule init
 git submodule update
