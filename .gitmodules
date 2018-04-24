@@ -1,0 +1,3 @@
+[submodule "packages/agora-meteor"]
+	path = packages/agora-meteor
+	url = https://github.com/Agora-Project/agora-meteor.git
