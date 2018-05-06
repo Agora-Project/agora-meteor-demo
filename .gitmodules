@@ -1,3 +1,6 @@
 [submodule "packages/agora-meteor"]
 	path = packages/agora-meteor
 	url = https://github.com/Agora-Project/agora-meteor.git
+[submodule "packages/activitypub"]
+	path = packages/activitypub
+	url = https://github.com/Agora-Project/JSActivityPub
