@@ -61,25 +61,35 @@
                 <div class="mdl-layout__header-row">
                     <!-- Add spacer, to align navigation to the right -->
                     <div class="mdl-layout-spacer"></div>
-                    <a class="mdl-navigation__link" href="/home">Home</a>
+
+                    {{#if currentUser }}
+                        <a class="mdl-navigation__link" href="/home">Home</a>
+                    {{/if }}
+
                     <a class="mdl-navigation__link" href="/">Recent Posts</a>
                     <a class="mdl-navigation__link" href="/federation">Federation</a>
+
                     {{#if isInRole 'moderator'}}
-                    <a class="mdl-navigation__link" href="/admin">Admin</a>
+                        <a class="mdl-navigation__link" href="/admin">Admin</a>
                     {{/if}}
+
                     <a class="mdl-navigation__link" href="/about" >About</a>
+
                     {{#if currentUser }}
                         <a class="mdl-navigation__link" href="/user" >Profile</a>
                     {{/if }}
+
                     <a class="mdl-navigation__link" href="/sign-in">{{> atNavButton }}</a>
                 </div>
             </header>
             <div class="mdl-layout__drawer">
+
                 <span class="mdl-layout-title">Agora Project</span>
                 <nav class="mdl-navigation">
                     {{#if isInRole 'moderator'}}
                         <a class="mdl-navigation__link" href="/users">Users</a>
                     {{/if }}
+                    
                     {{#if currentUser }}
                         <a class="mdl-navigation__link" href="/change-password">Change password</a>
                     {{/if }}
